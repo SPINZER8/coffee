@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="progress-bar"></div>
+    
+    <div class="container">
+        <nav>
+            <h1>📚 coffee</h1>
+            <p>Interactive Learning Documentation</p>
+        </nav>
+        
+        <main>
+            <section id="why-coffee-is-a-developer-s-best-friend">
+                <h2>Why Coffee is a Developer's Best Friend ☕</h2>
+                <p>Coffee isn't just a drink - it's liquid motivation in a cup! The aroma of freshly brewed coffee can stimulate the brain, increasing alertness and focus. In fact, studies show that the smell of coffee can even improve memory and cognitive function.</p>
+            </section>
+            
+            <section id="the-magic-formula">
+                <h2>The Magic Formula</h2>
+                <p>- 1 cup coffee = 100 bugs fixed: Coffee helps developers stay focused and energized, allowing them to tackle complex coding tasks with ease.</p>
+                <p>- 2 cups = 1 feature shipped: With the right amount of caffeine, developers can work efficiently, meeting deadlines and shipping features on time.</p>
+                <p>- 3 cups = questioning life choices: As the caffeine starts to wear off, developers may begin to wonder why they chose this career path in the first place.</p>
+                <p>- 4+ cups = talking to rubber ducks: At this point, the effects of caffeine can be unpredictable, leading to some...interesting...behavior.</p>
+            </section>
+            
+            <section id="science-behind-it">
+                <h2>Science Behind It</h2>
+                <p>Caffeine blocks adenosine receptors in your brain, which normally signal tiredness. This means that sleepy chemicals can't do their job, and you feel more alert and awake.</p>
+                <p>But did you know that caffeine can also increase the production of dopamine, a neurotransmitter associated with pleasure and reward? This is why many people experience a sense of euphoria after consuming coffee.</p>
+            </section>
+            
+            <section id="the-developer-s-dilemma">
+                <h2>The Developer's Dilemma</h2>
+                <p>"I'll just fix this one bug" at 2 PM → suddenly it's 2 AM and you've refactored the entire codebase. This is a common phenomenon, especially when working on complex projects with tight deadlines.</p>
+                <p>However, consuming coffee after 2 PM can disrupt sleep patterns, leading to a cycle of dependency. It's essential to establish a healthy coffee-drinking routine to avoid this trap.</p>
+            </section>
+            
+            <section id="types-of-coffee-drinkers">
+                <h2>Types of Coffee Drinkers</h2>
+                <p>There are three main types of coffee drinkers:</p>
+                <ul>
+                    <li>Morning Sipper: Needs coffee to function</li>
+                    <li>Afternoon Chugger: Needs coffee to survive meetings</li>
+                    <li>Midnight Debugger: Coffee IS their blood type</li>
+                </ul>
+                <p>Which one are you?</p>
+            </section>
+            
+            <section id="pro-tips">
+                <h2>Pro Tips</h2>
+                <p>Cold brew for marathon coding sessions: This type of coffee is made by steeping coarse-ground coffee beans in cold water for an extended period, resulting in a smooth and full-bodied flavor.</p>
+                <p>Espresso for "the build is failing" emergencies: A concentrated shot of coffee, perfect for when you need a quick energy boost to tackle the problem at hand.</p>
+                <p>Decaf is just sad water (don't @ me): Let's face it, decaf coffee is just not the same as regular coffee. But hey, if you need a caffeine-free option, go for it!</p>
+            </section>
+            
+            <section id="side-effects-may-include">
+                <h2>Side Effects May Include</h2>
+                <p>Suddenly understanding regex, speaking in binary, and befriending the office printer. Okay, maybe not the last one, but you get the idea!</p>
+            </section>
+            
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>Remember: Coffee doesn't ask silly questions. Coffee understands.</p>
+            </section>
+        </main>
+
+        <footer style="margin-top: 60px; padding: 25px 0; text-align: center; background: #f8f9fa; border-top: 1px solid #ddd; color: #555; font-size: 0.95rem;">
+            <p>📅 Generated on <strong>October 10, 2025</strong></p>
+            <p>✨ Built with <span style="color: #007b83; font-weight: 600;">AI Learning Notes Publisher</span></p>
+        </footer>
+    </div>
+    
+    <button id="back-to-top">↑</button>
+    
+    <script>
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+        
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
